@@ -1,0 +1,89 @@
+/*==============================
+=          RESPONSIVO          =
+==============================*/
+
+/* Tablets en horizonal y escritorios normales
+------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1300px) {
+  :root {font-size: 15px;}
+  .pagina__oculta {display: none;}
+  .menu__oculto{display: inline-block;}
+  .destacados__contenedor{width: 70%;}
+  .educacion__titulo{font-size: 2rem;}
+  .notas{width: 30%;}
+}
+
+@media screen and (max-width: 980px) {
+  .main {padding-top: 0;}
+  .header__lista{display: none;}
+  .video{width: 80%;}
+  .nav__enlaces{display: none;}
+  .menu__boton{display: block;}
+  .header__lista{display: none;}
+  .destacados__contenedor{justify-content: space-evenly;}
+  .destacados__contenedor{width: 100%;}
+  .educacion__texto{width: 45%;}
+  .educacion__titulo{font-size: 2rem;}
+  .educacion__elemento::before{left: -0.5rem; margin-top: -1.1rem;}
+  .notas{width: 300px;}
+  .jovenes__contenedor{flex-wrap: wrap; padding: 0;}
+  .jovenes__texto{width: 100%; padding-bottom: 0;}
+  .jovenes__slider{width: 100%; height: 30rem;}
+  .footer__contenedor{grid-template-columns: 1fr 1fr; padding: 2rem;}
+  .footer__seccion-Ocultar{grid-column: 1 / 3;}
+}
+
+/* Móviles en horizontal o tablets en vertical
+------------------------------------------------------------------------- */
+@media screen and (max-width: 680px) {
+  .educacion__contenedor {display: block; height: auto;}
+  .educacion__imagen, .educacion__img, .educacion__texto { width: 100%;}
+  .educacion__img {float: none;}
+  .educacion__texto {height: 100vw;}
+  .educacion__elemento::before {
+    left: -0.25rem; margin-top: -0.9rem;
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+  .jovenes__parrafo-Oculto{display: none;}
+}
+@media screen and (max-width: 620px) {
+  :root {font-size: 14px;}
+  .video{width: 100%;}
+  .destacados__contenedor{width: 100%;}
+  .destacados__seccion-Desaparace{display: none;}
+  .destacados__seccion {width: 42vw; height: 42vw;}
+  .destacados__track {height: 42vw !important;}
+  .destacados__seccion-Movil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 42vw; height: 42vw; margin: 10px;
+  }
+  .destacado__division-Movil {
+    flex-direction: row;
+    height: 20vw;
+    margin: 0;
+  }
+  .destacados__titulo{font-size: 1rem;}
+  .destacado__icon-Movil{
+    padding: 10px;
+    margin-left: 5%;
+    border-radius: 10px;
+  }
+  .notas{width: 47%;}
+}
+
+/* Móviles en vertical
+------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .header__frase{font-size: 1.75rem;}
+  .splide {padding: 0 0 3rem 0 !important;}
+  .splide__arrow{display: none;}
+  .educacion__elemento::before{margin-top: -1rem;}
+  .jovenes__slider{height: 300px;}
+  .footer__contenedor{grid-template-columns: 1fr; padding: 2rem 0;}
+  .footer__seccion{margin: auto; width: 80%;}
+  .footer__seccion-Ocultar{display: none;}
+}
+/*=====  End of RESPONSIVO  ======*/
