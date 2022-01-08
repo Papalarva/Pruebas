@@ -642,6 +642,7 @@
 .jovenes__slider .jovenes__arrow svg{fill: var(--blanco);}
 .jovenes__slider .jovenes__arrow svg:hover{fill: var(--blanco);}
 .jovenes__slider .splide__pagination__page {background-color: rgba(255, 255, 255, 0.308);}
+.jovenes__slider .splide__pagination__page:hover{background-color: var(--blanco); opacity: 0.8;}
 .jovenes__slider .splide__pagination__page.is-active {background-color: var(--blanco);}
 /*=====  End of JOVENES EN CASA ======*/
 
