@@ -210,6 +210,7 @@ new Splide( '#jovenes__splide', {
     prev  : 'splide__arrow--prev jovenes__arrow jovenes__splide',
     next  : 'splide__arrow--next jovenes__arrow',
   },
+  autoplay: true,
   perMove: 1,
   interval: 3000,
 }).mount();
