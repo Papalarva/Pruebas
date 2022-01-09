@@ -9,9 +9,9 @@
   font-size: 16px;
   --font-titulo: "Poppins", sans-serif;
   --font-parrafo: "Raleway", sans-serif;
-  --rosa: #a22245;
+  --rosa: #A22245;
   --blanco: #fff;
-  --negro: #000;
+  --negro: #212121;
 }
 * {
   padding: 0;
@@ -91,6 +91,7 @@
 }
 .main {padding-top: 150px;}
 .boton:active {transform: scale(0.9);}
+.boton:hover{color: var(--rosa); background-color: var(--blanco);}
 .apartados__titulo {
   color: var(--rosa);
   font-family: var(--font-titulo);
@@ -278,10 +279,6 @@
   font-size: 1rem;
   padding: 14px;
   margin: 0 10px;
-}
-.menu__semestres:hover{
-  background-color: var(--rosa);
-  color: var(--blanco);
 }
 .dropdown {
   position: relative;
@@ -635,7 +632,7 @@
   color: var(--blanco);
   text-align: center;
 }
-.jovenes__parrafo{margin: 10px 0;}
+.jovenes__parrafo{margin: 10px 0; font-weight: 600;}
 .jovenes__track{height: 100%;}
 .jovenes__video {height: 100%; width: 100%;
 }

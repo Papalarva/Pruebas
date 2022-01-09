@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/stylesPages.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <title>CBTIS 128 | Contacto</title>
+</head>
+<body class="body">
+    <main id="main">
+        <h1 class="paginas__titulo">Oferta Académica</h1>
+        <div id="contacto__splide" class="splide contacto__splide">
+            <div class="splide__arrows contacto__arrows">
+                <button class="splide__arrow splide__arrow--prev">Atras
+                </button>
+                <button class="splide__arrow splide__arrow--next">Siguiente
+                </button>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="contacto__tarjeta">
+                            <div class="contacto__imagen">
+                                <img class="contacto__img" src="../assets/images/prueba1.jpg" alt="">
+                            </div>
+                            <div class="contacto__texto">
+                                <h1 class="contacto__titulo">| OBJETIVO</h1>
+                                <p class="contacto__parrafo">El Bachillerato Tecnológico tiene como objetivo fomentar una educación integral, contribuyendo a la articulación y flexibilidad del sistema educativo, acorde con los intereses de los estudiantes y las necesidades de desarrollo del país, la Secretaría de Educación Pública a través de la Subsecretaría de Educación e Investigación Tecnológicas, con pleno respeto al federalismo educativo. Esta modalidad es bivalente, ya que se puede estudiar el bachillerato al mismo tiempo que una carrera de técnico, las materias propedéuticas que se cursan son prácticamente las mismas que en el bachillerato general, por lo que se prepara para estudiar una carrera profesional del nivel superior, adicionalmente, el plan de estudios incluye materias tecnológicas que se cursan junto con las antes mencionadas y que preparan como técnico del nivel medio superior al estudiante en las diversas carreras que ofrece ésta modalidad de bachillerato.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="contacto__tarjeta">
+                            <div class="contacto__imagen">
+                                <img class="contacto__img" src="../assets/images/prueba2.jpg" alt="">
+                            </div>
+                            <div class="contacto__texto">
+                                <h1 class="contacto__titulo">| ESTRUCTURA CURRICULAR</h1>
+                                <p class="contacto__parrafo">La nueva estructura curricular, que propone un modelo centrado en el aprendizaje sustentado en el constructivos, incluye tres componentes básicos: Formación Básica, Formación Profesional y Formación Propedéutica, y se imparte en la modalidad escolarizada. Su estructura curricular presenta las horas-semana mínimas requeridas y está organizada en seis semestres, integrados por módulos y asignaturas.
+                                El Componente de Formación Profesional se articula con la educación superior y asimismo permite la incorporación al sector productivo. Se organiza en carreras estructuradas en módulos para desarrollar las competencias profesiónales correspondientes. Los módulos de la formación profesional son autocontenidos y están enfocados en el desarrollo de habilidades específicas para el trabajo, con una orientación predominantemente práctica.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="contacto__tarjeta">
+                            <div class="contacto__imagen">
+                                <img class="contacto__img" src="../assets/images/prueba3.jpg" alt="">
+                            </div>
+                            <div class="contacto__texto">
+                                <h1 class="contacto__titulo">| FORMACIÓN PROFESIONAL</h1>
+                                <p class="contacto__parrafo">Al concluir cada módulo los estudiantes reciben un certificado. Estos certificados se plantean como "salidas laterales", que permiten que los estudiantes tengan reconocimiento por sus estudios incluso si no cursan tres años completos de EMS. Cuando se concluyen los 3 años de estudio, se puede ingresar a la educación superior en instituciones universitarias, politeacute;cnicas o tecnológicas. Al concluir los estudios obtienes el certificado de bachillerato y una carta de pasante; Una vez cubiertos los requisitos correspondientes, el regresado obtiene el título y la cédula profesional de la carrera cursada, registrados ante la Dirección General de Profesiones de la Secretaría de Educación Pública.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script>
+        const splide = new Splide( '#contacto__splide',{
+            classes: {
+                    pagination: 'splide__pagination contacto__pagination',
+                    page      : 'splide__pagination__page contacto__pagination__page ',
+                },
+            type: "loop",
+            autoplay: "true",
+            arrowPath: false,
+            perPage: 1,
+            interval: 3000,
+            gap: 20,
+        } );
+        splide.on( 'pagination:mounted', function ( data ) {
+            // You can add your class to the UL element
+            data.list.classList.add( 'splide__pagination--custom' );
+            // `items` contains all dot items
+            let i = 0;
+            data.items.forEach( function ( item ) {
+                i = i + 1;
+                if (i == 1) {item.button.textContent = String("OBJETIVO" );}
+                if (i == 2) {item.button.textContent = String("ESTRUTURA" );}
+                if (i == 3) {item.button.textContent = String("FORMACIÓN PROFESIONAL");}
+                console.log(item);
+            } );
+        } );
+        splide.mount();
+    </script>
+</body>
+</html>
