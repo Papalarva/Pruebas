@@ -41,7 +41,7 @@
 }
 .especialidades__splide{
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 8%;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -70,7 +70,11 @@
 }
 .especialidades__pagination__page:hover {background: #606060; opacity: 1; cursor: pointer;}
 .especialidades__pagination__page.is-active {background-color: var(--rosa);}
-.especialidad__img{width: 100%; height: 100%; position: absolute; object-fit: cover;}
+.especialidad__img{
+    width: 100%; height: 100%; 
+    position: absolute; 
+    object-fit: cover; object-position: top;
+}
 .especialidad__texto{
     position: absolute; 
     z-index: 1;
@@ -84,6 +88,7 @@
 .especialidad__enlace{
     text-decoration: none; 
     color: var(--blanco);
+    font-weight: 600;
 }
 .especialidad__enlace:hover > .especialidad__icon {
     animation: flecha .5s 2;

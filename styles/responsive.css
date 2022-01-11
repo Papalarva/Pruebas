@@ -42,6 +42,7 @@
     padding: 10px 0;
     width: 100%;
   }
+  .especialidades__splide{padding: 0 3rem !important;}
   /* .especialidad{width: 48%;}
   .especialidad__titulo::before{width: calc(100% - 35px);}
   .especialidad__icon{width: 35px; height: 35px;}
