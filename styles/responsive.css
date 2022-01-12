@@ -12,9 +12,7 @@
   .educacion__titulo{font-size: 2rem;}
   .notas{width: 40%;}
   .oferta__texto{top: 10%;}
-  /* .especialidad{width: 48%;}
-  .especialidad__icon{width: 35px; height: 35px;}
-  .especialidad__parrafo{padding: 10px 10px 10px 35px;} */
+  .departamentos{padding: 2rem 10%;}
 }
 
 @media screen and (max-width: 980px) {
@@ -43,10 +41,9 @@
     width: 100%;
   }
   .especialidades__splide{padding: 0 3rem !important;}
-  /* .especialidad{width: 48%;}
-  .especialidad__titulo::before{width: calc(100% - 35px);}
-  .especialidad__icon{width: 35px; height: 35px;}
-  .especialidad__parrafo{padding: 10px 10px 10px 35px;} */
+  .contacto__enlace{margin: 1rem 0;}
+  .contacto__mapa{width: 98%;}
+  .contacto__formulario{width: 70%;}
 }
 
 /* Móviles en horizontal o tablets en vertical
@@ -63,6 +60,16 @@
   }
   .notas{width: 40%;}
   .jovenes__parrafo-Oculto{display: none;}
+  .departamentos__administracion{width: 100%;}
+  .contacto__seccion{flex-direction: column;}
+  .contacto__directorios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contacto__informacion{justify-content: unset; flex-direction: column;
+  }
+  .contacto__formulario{flex-direction: column;}
 }
 @media screen and (max-width: 620px) {
   :root {font-size: 14px;}
@@ -98,14 +105,7 @@
     flex-direction: column;
     position: relative;
   }
-  .oferta__pagination__page {
-      margin: 15px 0; 
-  }
-
-  /* .especialidad{width: 100%;}
-  .especialidad__titulo::before{width: calc(100% - 35px);}
-  .especialidad__icon{height: 100%; }
-  .especialidad__parrafo{padding: 10px 10px 10px 35px;} */
+  .oferta__pagination__page {margin: 15px 0; }
 }
 
 /* Móviles en vertical
@@ -134,10 +134,10 @@
   .especialidades__pagination__page{padding: 15px 0;}
   .especialidades__pagination{width: 100%;}
   .especialidad__texto{padding: 10px;}
-  /* .especialidades__contenedor{display: none;}
-  .especialidades__splide{background-color: #ccc; padding-top: 3rem !important;}
-  .especialidades__splide .splide__pagination__page{background-color: #eee;}
-  .especialidades__splide .splide__pagination__page.is-active{background-color: var(--rosa);}
-  .especialidades__splide .splide__pagination__page:hover{background-color: var(--rosa); opacity: 0.5;} */
+  .contenedor__titulacion{flex-direction: column; height: auto;}
+  .informacion__titulacion{width: 100%;}
+  .botones__titulacion{width: 100%;}
+  .contacto__formulario{width: 96%;}
+  .formulario__campos{width: 100%;}
 }
 /*=====  End of RESPONSIVO  ======*/

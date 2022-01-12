@@ -1,252 +1,401 @@
-.oferta__parrafo{word-spacing: 2px;}
-.oferta__arrows{display: none;}
-.oferta__pagination{position: absolute; top: -100%;}
+/*==============================
+=            ALUMNOS           =
+==============================*/
+
+/*      OFERTA EDUCATIVA     */
+.oferta__parrafo {
+  word-spacing: 2px;
+}
+.oferta__arrows {
+  display: none;
+}
+.oferta__pagination {
+  position: absolute;
+  top: -100%;
+}
 .oferta__pagination__page {
-    margin: 0 20px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    background: none;
-    border-radius: 0;
-    border-bottom: 2px solid transparent;
-    width: max-content;
-    height: min-content; 
+  margin: 0 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: none;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  width: max-content;
+  height: min-content;
 }
-.oferta__pagination__page:hover {background: transparent; cursor: pointer;}
-.oferta__pagination:hover{color: transparent;}
+.oferta__pagination__page:hover {
+  background: transparent;
+  cursor: pointer;
+}
+.oferta__pagination:hover {
+  color: transparent;
+}
 .oferta__pagination__page.is-active {
-    border-bottom: 2px solid var(--rosa);
-    color: var(--rosa);
-    background-color: transparent;
+  border-bottom: 2px solid var(--rosa);
+  color: var(--rosa);
+  background-color: transparent;
 }
-.oferta__imagen{width: 50%; height: 500px;}
-.oferta__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    margin-left: 10%;
+.oferta__imagen {
+  width: 50%;
+  height: 500px;
 }
-.oferta__texto{
-    position: absolute;
-    top: 20%;    right: 5%;
-    padding: 10px;
-    width: 45%;
-    background-color: var(--blanco);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.oferta__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin-left: 10%;
 }
-.oferta__titulo{
-    font-size: 1.5rem; 
-    margin-bottom: 10px;
-    color: var(--rosa);
+.oferta__texto {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  padding: 10px;
+  width: 45%;
+  background-color: var(--blanco);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.especialidades__splide{
-    width: 100%;
-    padding: 0 8%;
-    display: flex;
-    flex-direction: row-reverse;
+.oferta__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--rosa);
 }
-.especialidades__splide .splide__track{
-    position: relative;
-    width: 70%; height: 550px;
+/*      ESPECIALIDADES    */
+.especialidades__splide {
+  width: 100%;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: row-reverse;
 }
-.especialidades__pagination{
-    display: flex;
-    position: relative;
-    width: 30%;
-    padding: 0;
-    bottom: 0;
+.especialidades__splide .splide__track {
+  position: relative;
+  width: 70%;
+  height: 550px;
 }
-.especialidades__arrows{display: none;}
-.especialidades__pagination li {width: 100%; height: calc(100% / 7);}
+.especialidades__pagination {
+  display: flex;
+  position: relative;
+  width: 30%;
+  padding: 0;
+  bottom: 0;
+}
+.especialidades__arrows {
+  display: none;
+}
+.especialidades__pagination li {
+  width: 100%;
+  height: calc(100% / 7);
+}
 .especialidades__pagination__page {
-    height: 100%;
-    background-color: #505050;
-    margin: 0;
-    font-size: 1.1rem;
-    width: 100%;
-    font-weight: 600;
-    color: var(--blanco);
-    border-radius: 0;
+  height: 100%;
+  background-color: #505050;
+  margin: 0;
+  font-size: 1.1rem;
+  width: 100%;
+  font-weight: 600;
+  color: var(--blanco);
+  border-radius: 0;
 }
-.especialidades__pagination__page:hover {background: #606060; opacity: 1; cursor: pointer;}
-.especialidades__pagination__page.is-active {background-color: var(--rosa);}
-.especialidad__img{
-    width: 100%; height: 100%; 
-    position: absolute; 
-    object-fit: cover; object-position: top;
+.especialidades__pagination__page:hover {
+  background: #606060;
+  opacity: 1;
+  cursor: pointer;
 }
-.especialidad__texto{
-    position: absolute; 
-    z-index: 1;
-    color: var(--blanco);
-    padding: 25px; 
-    bottom: 0;
-    background-color: rgba(162,34,69, 0.9);
+.especialidades__pagination__page.is-active {
+  background-color: var(--rosa);
 }
-.especialidad__titulo{font-size: 1.5rem; margin-bottom: 1.5vw;}
-.especialidad__parrafo{margin-bottom: 1.5vw;}
-.especialidad__enlace{
-    text-decoration: none; 
-    color: var(--blanco);
-    font-weight: 600;
+.especialidad__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: top;
+}
+.especialidad__texto {
+  position: absolute;
+  z-index: 1;
+  color: var(--blanco);
+  padding: 25px;
+  bottom: 0;
+  background-color: rgba(162, 34, 69, 0.9);
+}
+.especialidad__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 1.5vw;
+}
+.especialidad__parrafo {
+  margin-bottom: 1.5vw;
+}
+.especialidad__enlace {
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: 600;
 }
 .especialidad__enlace:hover > .especialidad__icon {
-    animation: flecha .5s 2;
+  animation: flecha 0.5s 2;
 }
 @keyframes flecha {
-    0%{ transform: translateY(0); }
-    50%{ transform: translate(5px, -5px); }
+  0% {
+    transform: translateY(0);
   }
-/*
-.especialidades__contenedor{
-    background-color: #ccc;
+  50% {
+    transform: translate(5px, -5px);
+  }
+}
+/*      TITULACIÓN    */
+.texto__titulacion {
+  padding: 0 10%;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.contenedor__titulacion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  height: 500px;
+}
+.informacion__titulacion {
+  width: 70%;
+  color: var(--blanco);
+  background-color: var(--rosa);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  height: 100%;
+  position: relative;
+}
+.informacion__titulacion::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-bottom: 5px solid var(--blanco);
+  border-left: 5px solid var(--blanco);
+  left: 20px;
+  bottom: 20px;
+}
+.informacion__titulacion::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-top: 5px solid var(--blanco);
+  border-right: 5px solid var(--blanco);
+  right: 20px;
+  top: 20px;
+}
+.titulo__informacion__titulacion {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+.botones__titulacion {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #505050;
+}
+.btn__titulacion {
+  height: calc(100% / 3);
+  border: none;
+  text-align: right;
+  color: var(--blanco);
+  padding: 20px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+.btn__titulacion::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--rosa);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.btn__titulacion:hover::before {
+  transform: scaleX(1);
+}
+.informacion__automatica,
+.informacion__diseño,
+.informacion__experiencia {
+  transition: all 0.5s ease;
+}
+/*=====  End of  ALUMNOS  ======*/
+
+/*==============================
+=        DEPARTAMENTOS         =
+==============================*/
+.departamentos {
+  display: flex;
+  background-color: #eee;
+  padding: 2rem 15%;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+.departamentos__administracion {
+  width: 60%;
+}
+.departamentos__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: var(--rosa);
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+}
+.departamentos__enlace {
+  display: flex;
+  align-items: center;
+}
+.administracion__enlace {
+  text-decoration: none;
+  color: var(--negro);
+  padding: 20px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  display: block;
+}
+.departamentos__icon {
+  color: var(--rosa);
+  font-size: 3rem;
+}
+.administracion__enlace:hover {
+  transform: translateX(5px);
+  color: var(--rosa);
+}
+.docentes {
+  width: 200px;
+  height: 300px;
+  border: 2px solid var(--rosa);
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.docentes__img {
+  padding: 40px 15px;
+  width: 100%;
+}
+.docentes__texto {
+  height: 100%;
+  display: flex;
+  background-color: var(--rosa);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+}
+.docentes__parrafo {
+  color: var(--blanco);
+  font-weight: 700;
+  text-align: center;
+}
+.docentes:hover > .capa {
+  opacity: 1;
+}
+.docentes__boton {
+  background-color: transparent;
+}
+.docentes__boton:hover {
+  background-color: var(--blanco);
+  color: var(--rosa);
+}
+/*=====  End of  DEPARTAMENTOS  ======*/
+
+/*==============================
+=        CONTACTO         =
+==============================*/
+.contacto__informacion {
+    margin: 1rem 0;
     display: flex;
-    flex-wrap: wrap;
-    padding: 50px 0;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.especialidad{
-    width: 40%;
-    background-color: var(--blanco);
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.especialidad__cabecera{
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-bottom: 1px solid #ccc;
-}
-.especialidad__icon{
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    background-color: var(--rosa);
-    color: var(--blanco);
-    height: 100% !important;
-}
-.especialidad__titulo{
-    font-size: 1.25rem;
-    margin-left: 10px;
+.contacto__titulos {
+    font-family: var(--font-titulo);
     color: var(--rosa);
-    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
 }
-.especialidad__titulo::before{
-    content: "";
-    position: absolute;
-    width: calc(100% - 50px);
-    height: 100%;
-    transform: scaleX(0);
-    top: 0; right: 0;
-    z-index: -1;
-    background-color: var(--rosa);
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0, 5, 1.6, 0.4, 0.7);
+.contacto__logo {
+    color: var(--rosa);
+    font-size: 2rem;
+    margin: 0 5px;
 }
-.especialidad:hover > .especialidad__cabecera .especialidad__titulo {color: var(--blanco);}
-.especialidad:hover > .especialidad__cabecera .especialidad__titulo::before {transform: scaleX(1);}
-.especialidad__parrafo{padding: 30px 50px;}
-.especialidad__footer{
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    justify-content: space-between;
-    background-color: #aaa;
-    
-}
-.especialidad__info{text-align: center;}
-.especialidad__enlace{
-    display: flex;
-    align-items: center;
+.contacto__enlace {
     text-decoration: none;
     color: var(--negro);
+    display: flex;
+    align-items: center;
     font-weight: 600;
-    gap: 10px;
+    margin: 1rem 0;
+}   
+.contacto__texto {
+    transition: all 0.5s ease;
+    margin: 5px;
 }
-
-/*
-.especialidades__contenedor{
+.contacto__enlace:hover > .contacto__texto {transform: translateX(5px);}
+.contacto__seccion {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #ccc;
-    padding: 25px 2% 50px 2%;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #a8a8a818;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
-.especialidades{
-    width: 40%; 
-    background-color: var(--blanco);
-    margin: 25px 0;
-    cursor: pointer;
-}
-.especialidades__encabezado{
+.contacto__mapa {
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    position: relative;
+    margin: 16px auto;
+    border-radius: 3px;
+    border: 1px solid var(--rosa);
+    width: 600px;
+    height: 450px;
 }
-.especialidades__icon, .especialidades__boton{
-    height: 50px;
-    width: 50px;
+.contacto__formulario {
+    width: 50%;
+    margin: 2rem auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: var(--blanco); 
-    background-color: var(--rosa);
-    
-}
-.especialidades__titulo{
-    font-size: 1.125rem;
-    margin: 0 20px;
-    z-index: 1;
-    color: var(--rosa);
-}
-.especialidades__titulo::before{
-    content: "";
-    position: absolute;
-    width: calc(100% - 50px);
-    height: 100%;
-    transform: scaleX(0);
-    top: 0; right: 0;
-    z-index: -1;
-    background-color: var(--rosa);
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0, 5, 1.6, 0.4, 0.7);
-}
-.especialidades:hover  >  .especialidades__encabezado .especialidades__titulo{
-    color: var(--blanco);
-}
-.especialidades:hover  >  .especialidades__encabezado .especialidades__titulo::before{
-    transform: scaleX(1);
-}
-.especialidades:hover  >  .especialidades__footer .especialidades__icon{transform: scale(1.1);}
-.especialidades__botonIcon{font-size: 2rem;}
-.especialidades:hover > .especialidades__footer .especialidades__botonIcon{animation: icon .5s 2;}
-@keyframes icon {
-  0%{ transform: translateX(0); }
-  50%{ transform: translateX(10%); }
-}
-.especialidades__parrafo{
-    padding: 20px 50px;
-}
-.especialidades__footer{
-    padding: 0 0 0 50px;
-    background-color: #aaa;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    bottom: 0;
+    flex-wrap: wrap;
 }
-.especialidades__duracion{
-    font-weight: 700;
+.formulario__campos {
+    width: 48%;
+    outline: 0;
+    border: 2px solid rgb(240, 240, 240);
+    margin: 0.5rem 0;
+    display: inline;
+    border-radius: 3px;
+    padding: 12px 20px;
+    font-family: var(--font-parrafo);
+    font-weight: 400;
 }
-.especialidades__boton{
-    text-decoration: none;
+.formulario__campos:focus {border: 2px solid var(--rosa);}
+.formulario__comentarios {
+    width: 100%;
+    height: 8rem;
+    resize: vertical;
 }
-*/
+.contacto__boton {
+    padding: 10px 30px;
+    margin: 0 auto;
+    border: 2px solid var(--rosa);
+}
+/*=====  End of  CONTACTO  ======*/

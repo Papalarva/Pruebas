@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/stylesPages.css">
     <link rel="stylesheet" href="../styles/responsive.css">
@@ -14,124 +12,78 @@
 </head>
 <body class="body">
     <main id="main">
-     <!-- ESPECIALIDADES 
+        <h1 class="apartados__titulo">Contacto</h1>
         <section>
-            <h1 class="apartados__titulo">ESPECIALIDADES</h1>
-            <div class="especialidades__contenedor">
-                <article class="especialidades">
-                    <header class="especialidades__encabezado">
-                        <i class='bx bx-chip especialidades__icon'></i>
-                        <h1 class="especialidades__titulo">Técnico en Electronica</h1>
-                    </header>
-                    <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante aplicar dispositivos y sistemas electrónicos compactos y eficientes, que están presentes en todos los ámbitos del ser humano, para mantener toda la diversidad de sistemas electrónicos</p>
-                    <footer class="especialidades__footer">
-                        <div>
-                            <h1 class="especialidades__duracion">Duración: </h1> 
-                            <p class="especialidades__semestres">6 semestres</p> 
-                        </div>
-                        <a class="especialidades__boton" href="../assets/document/oferta-academica/">
-                            <i class='bx bx-chevrons-right especialidades__botonIcon'></i>
-                        </a>
-                    </footer>
-                </article>
-                <article class="especialidades">
-                    <header class="especialidades__encabezado">
-                        <i class='bx bx-code-alt especialidades__icon'></i>
-                        <h1 class="especialidades__titulo">Técnico en Programación</h1>
-                    </header>
-                    <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante realizar actividades cómo: analizar, diseñar, desarrollar, instalar y mantener software de aplicación tomando como base los requerimientos del usuario.</p>
-                    <footer class="especialidades__footer">
-                        <div>
-                            <h1 class="especialidades__duracion">Duración: </h1> 
-                            <p class="especialidades__semestres">6 semestres</p> 
-                        </div>
-                        <a class="especialidades__boton" href="../assets/document/oferta-academica/">
-                            <i class='bx bx-chevrons-right especialidades__botonIcon'></i>
-                        </a>
-                    </footer>
-                </article>
-                <article class="especialidades">
-                    <header class="especialidades__encabezado">
-                        <i class='bx bx-desktop especialidades__icon'></i>
-                        <h1 class="especialidades__titulo">Técnico en Soporte de equipos de cómputo</h1>
-                    </header>
-                    <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante realizar operaciones de soporte y mantenimiento a equipos de cómputo de manera presencial y a distancia, e instalar redes LAN de acuerdo a las necesidades.</p>
-                    <footer class="especialidades__footer">
-                        <div>
-                            <h1 class="especialidades__duracion">Duración: </h1> 
-                            <p class="especialidades__semestres">6 semestres</p> 
-                        </div>
-                        <a class="especialidades__boton" href="../assets/document/oferta-academica/">
-                            <i class='bx bx-chevrons-right especialidades__botonIcon'></i>
-                        </a>
-                    </footer>
-                </article>
-                <article class="especialidades">
-                    <header class="especialidades__encabezado">
-                        <i class='bx bxs-user-detail especialidades__icon'></i>
-                        <h1 class="especialidades__titulo">Técnico en Recursos Humanos</h1>
-                    </header>
-                    <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante elaborar y gestionar documentación administrativa, integrar al personal, asistir en actividades de capacitación, y evaluación del personal.</p>
-                    <footer class="especialidades__footer">
-                        <div>
-                            <h1 class="especialidades__duracion">Duración: </h1> 
-                            <p class="especialidades__semestres">6 semestres</p> 
-                        </div>
-                        <a class="especialidades__boton" href="../assets/document/oferta-academica/">
-                            <i class='bx bx-chevrons-right especialidades__botonIcon'></i>
-                        </a>
-                    </footer>
-                </article>
-                <article class="especialidades">
-                    <header class="especialidades__encabezado">
-                        <i class='bx bx-dna especialidades__icon'></i>
-                        <h1 class="especialidades__titulo">Técnico en Laboratorista Químico</h1>
-                    </header>
-                    <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante asistir en las operaciones básicas de laboratorio ejecutando métodos de análisis cualitativos, cuantitativos, físico-químicos, y microbiológicos.</p>
-                    <footer class="especialidades__footer">
-                        <div>
-                            <h1 class="especialidades__duracion">Duración: </h1> 
-                            <p class="especialidades__semestres">6 semestres</p> 
-                        </div>
-                        <a class="especialidades__boton" href="../assets/document/oferta-academica/">
-                            <i class='bx bx-chevrons-right especialidades__botonIcon'></i>
-                        </a>
-                    </footer>
-                </article>
-                <article class="especialidades">
-                    <header class="especialidades__encabezado">
-                        <i class='bx bx-plus-medical especialidades__icon'></i>
-                        <h1 class="especialidades__titulo">Técnico en Gericultura</h1>
-                    </header>
-                    <p class="especialidades__parrafo">Proporcionamos las herramientas para que el alumno adquiera conocimientos, habilidades y destrezas; asuma un actitud responsable para ejercer profesionalmente en el ámbito de la Geriatria</p>
-                    <footer class="especialidades__footer">
-                        <div>
-                            <h1 class="especialidades__duracion">Duración: </h1> 
-                            <p class="especialidades__semestres">6 semestres</p> 
-                        </div>
-                        <a class="especialidades__boton" href="../assets/document/oferta-academica/">
-                            <i class='bx bx-chevrons-right especialidades__botonIcon'></i>
-                        </a>
-                    </footer>
-                </article>
-                <article class="especialidades">
-                    <header class="especialidades__encabezado">
-                        <i class='bx bx-water especialidades__icon'></i>
-                        <h1 class="especialidades__titulo">Técnico en Refrigeración y Climatización</h1>
-                    </header>
-                    <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante realizar tareas de instalación, reconversión, actualización y de mantenimiento a sistemas de refrigeración y aire acondicionado, sistemas de enfriamiento de aire y agua, etc.</p>
-                    <footer class="especialidades__footer">
-                        <div>
-                            <h1 class="especialidades__duracion">Duración: </h1> 
-                            <p class="especialidades__semestres">6 semestres</p> 
-                        </div>
-                        <a class="especialidades__boton" href="../assets/document/oferta-academica/">
-                            <i class='bx bx-chevrons-right especialidades__botonIcon'></i>
-                        </a>
-                    </footer>
-                </article>
+            <h1 class="contacto__titulos">Información</h1>
+            <div class="contacto__informacion">
+                <a class="contacto__enlace" href="tel: 656 619 1934">
+                    <i class="contacto__logo bx bxs-phone"></i>
+                    <p class="contacto__texto">TELÉFONO: 619-1934 y 619-1570</p> 
+                </a>
+                <a class="contacto__enlace" href="mailto: direccion@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bxl-gmail"></i>
+                    <p class="contacto__texto">CORREO: direccion@cbtis128.edu.mx</p> 
+                </a>
+                <a class="contacto__enlace" target="_blank" href="https://www.google.com/maps/place/CBTIS+128/@31.654693,-106.4136039,15z/data=!4m2!3m1!1s0x0:0xd9ce9ee31ec09789?sa=X&ved=2ahUKEwiD3-6tr6D1AhUOnGoFHYhNDgYQ_BJ6BAg0EAU">
+                    <i class="contacto__logo bx bxs-map"></i>
+                    <p class="contacto__texto">DIRECCIÓN: Calle Nueva Zelanda No. 7870, Col. Oasis.</p> 
+                </a>
             </div>
-        </section>-->
-        
+        </section>
+        <section class="contacto__seccion">
+            <section class="contacto__directorios">
+                <h1 class="contacto__titulos">Directorio</h1>
+                <a class="contacto__enlace" href="mailto: subdireccion@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bxs-school"></i>
+                    <p class="contacto__texto">subdireccion@cbtis128.edu.mx</p>
+                </a>
+                <a class="contacto__enlace" href="mailto: practicasprofesionales@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bxs-briefcase"></i>
+                    <p class="contacto__texto">practicasprofesionales@cbtis128.edu.mx</p>
+                </a>
+                <a class="contacto__enlace" target="_blank" href="mailto: titulacion@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bxs-graduation"></i>
+                    <p class="contacto__texto">titulacion@cbtis128.edu.mx</p>
+                </a>
+                <a class="contacto__enlace" href="mailto: becas@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bx-paperclip"></i>
+                    <p class="contacto__texto">becas@cbtis128.edu.mx</p>
+                </a>
+                <a class="contacto__enlace" href="mailto: orientacion.tm@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bxs-message-dots"></i>
+                    <p class="contacto__texto">orientacion.tm@cbtis128.edu.mx</p>
+                </a>
+                <a class="contacto__enlace" target="_blank" href="mailto: orientacion.tv@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bxs-message-dots"></i>
+                    <p class="contacto__texto">orientacion.tv@cbtis128.edu.mx</p>
+                </a>
+                <a class="contacto__enlace" target="_blank" href="mailto: tutorias@cbtis128.edu.mx<">
+                    <i class="contacto__logo bx bxs-user-voice"></i>
+                    <p class="contacto__texto">tutorias@cbtis128.edu.mx</p>
+                </a>
+                <a class="contacto__enlace" target="_blank" href="mailto: biblioteca@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bxs-book-bookmark"></i>
+                    <p class="contacto__texto">biblioteca@cbtis128.edu.mx</p>
+                </a>
+                <a class="contacto__enlace" target="_blank" href="mailto: informacion@cbtis128.edu.mx">
+                    <i class="contacto__logo bx bx-search-alt-2"></i>
+                    <p class="contacto__texto">informacion@cbtis128.edu.mx</p>
+                </a>
+            </section>
+            <section>
+                <h1 class="contacto__titulos">Ubicación</h1>
+                <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27169.908315869037!2d-106.413604!3d31.654693000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9ce9ee31ec09789!2sCBTIS%20128!5e0!3m2!1ses!2smx!4v1641584106974!5m2!1ses!2smx"  allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </section>
+            <h1 class="contacto__titulos">Comentarios</h1>
+        <form class= "contacto__formulario" action="#" autocomplete="off">
+            <input class="formulario__campos" type="text" name="nombre" placeholder="Ingrese su nombre">
+            <input class="formulario__campos" type="email" name="correo" placeholder="Ingrese su correo">
+            <input class="formulario__campos" type="text" name="telefono" placeholder="Ingrese su tel&eacute;fono">
+            <input class="formulario__campos" type="text" name="asunto" placeholder="Ingrese el asunto">
+            <textarea class="formulario__campos formulario__comentarios" type="email" name="correo" placeholder="Coloque aqu&iacute; sus comentarios"></textarea>
+            <input class="boton contacto__boton" type="submit" name="enviar" value="Enviar">
+        </form>
+    </main>
 </body>
 </html>
