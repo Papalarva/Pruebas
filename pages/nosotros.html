@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBTIS 128 | Alumnos</title>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+    <!-- CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/stylesPages.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body class="body">
+    <!-- HEADER -->
+    <header>
+        <!-- PRELOADER -->
+        <div class="loader">
+            <div class="loader__onda">
+                <div class="loader__halo"></div>
+                <div class="loader__halo"></div>
+            </div>
+        </div>
+        <!-- PORTADA PRINCIPAL -->
+        <section class="header">
+            <h1 class="header__titulo">CBTIS 128</h1>
+            <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
+            <nav class="header__menu">
+                <ul class="header__lista">
+                    <li><a class="header__enlace elemento__enlace" href="../index.html">Inicio</a></li>
+                    <li><a class="header__enlace elemento__enlace pagina__seleccionada" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/departamentos.html">Departamentos</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/alumnos.html">Alumnos</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/transparencia.html">Transparencia</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/concursos.html">Concursos</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#main" class="boton ">Nosotros</a>
+        </section>
+        <!-- MENU PRINCIPAL -->
+        <nav id="menu" class="menu">
+            <section class="menu__logo">
+                <a href="index.html"><img class="menu__img" src="../assets/images/logo.svg" alt=""></a>
+                <h2 class="menu__titulo">CBTIS 128 </h2>
+            </section>
+            <ul class="header__lista">
+                <li><a class="menu__enlace elemento__enlace" href="../index.html">Inicio</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="../pages/departamentos.html">Departamentos</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="../pages/alumnos.html">Alumnos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/.transparencia.html">Transparencia</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/concursos.html">Concursos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/contacto.html">Contacto</a></li>
+                <!-- start menu desplegable -->
+                <li class="dropdown menu__oculto">
+                    <button class="boton menu__boton">Ver más</button>
+                    <div class="dropmenu">
+                        <a class="menu__enlace elemento__enlace" href="../pages/transparencia.html">Transparencia</a>
+                        <a class="menu__enlace elemento__enlace" href="../pages/concursos.html">Concursos</a>
+                        <a class="menu__enlace elemento__enlace" href="../pages/departamentos.html">Departamentos</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="boton menu__boton ">Horarios</button>
+                    <div class="dropmenu">
+                        <a href="../pages/horarios1-2.html" class="menu__enlace elemento__enlace">2do Semestre</a>
+                        <a href="../pages/horarios3-4.html" class="menu__enlace elemento__enlace">4to Semestre</a>
+                        <a href="../pages/horarios5-6.html" class="menu__enlace elemento__enlace">6to Semestre</a>
+                    </div>
+                </li>
+                <!-- end menu desplegable -->
+            </ul>
+            <button class="boton__movil">
+                <i class="bx bx-menu bx-lg menu__icono"></i>
+            </button>
+        </nav>
+        <!-- MENU MOVIL -->
+        <nav class="menu__movil">
+            <ul class="movil__lista">
+                <li><a id="toggle__semestres" class="movil__enlace movil__horarios">Horarios<i class='bx bxs-chevron-right chevron__icon'></i></a></li>
+                <li><a class="movil__enlace" href="../pages/index.html">Inicio</a></li>
+                <li><a class="movil__enlace" href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a class="movil__enlace" href="../pages/departamentos.html">Departamentos</a></li>
+                <li><a class="movil__enlace" href="../pages/alumnos.html">Alumnos</a></li>
+                <li><a class="movil__enlace" href="../pages/transparencia.html">Transparencia</a></li>
+                <li><a class="movil__enlace" href="../pages/concursos.html">Concursos</a></li>
+                <li><a class="movil__enlace" href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- MENU MOVIL DE SEMESTRES -->
+        <nav class="menu__semestres">
+            <ul class="semestres__lista">
+                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios1-2.html">2do Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios3-4.html">4to Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios5-6.html">6to Semestre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main id="main">
+        <!-- CONOCENOS -->
+        <article>
+            <h1 class="apartados__titulo">CONOCENOS</h1>
+            <div class="conocenos__contenedor">
+                <section class="conocenos">
+                    <i class='bx bxs-rocket conocenos__icon conocenos__icon-Gris'></i>
+                    <h2 class="conocenos__titulos">Misión</h2>
+                    <p class="conocenos__parrafos">Ser el medio fundamental para Adquirir, Transmitir y Acreditar la Cultura Tecnológica, formando Bachilleres Técnicos con un alto Nivel Académico y Tecnológico, preparados para responder a las necesidades del Desarrollo Estatal, a la preservación de nuestros recursos naturales, a la producción, y el desarrollo de bienes y servicios, en una estrecha Vinculación con el Sector Productivo, Educativo, Gubernamental y Social.</p>
+                </section>
+                <section class="conocenos conocenos-Rosa">
+                    <i class='bx bxs-show conocenos__icon'></i>
+                    <h2 class="conocenos__titulos">Visión</h2>
+                    <p class="conocenos__parrafos">Ser un sistema Educativo de Excelencia, en los ámbitos Académicos, Tecnológicos y de Investigación, que satisfaga ampliamente los requerimientos de Recursos Humanos del Sector Productivo y de la Sociedad en el Estado de Chihuahua.</p>
+                </section>
+                <section class="conocenos conocenos-Tablet">
+                    <i class='bx bxs-trophy conocenos__icon conocenos__icon-Gris'></i>
+                    <h2 class="conocenos__titulos">Objetivo de la Calidad</h2>
+                    <p class="conocenos__parrafos">Satisfacer las necesidades y expectativas de la Sociedad en Educación Media Superior Tecnológica, a través de la formación de Bachilleres y Técnicos Profesionales que fortalezcan y desarrollen una Cultura Tecnológica y una Iinfraestructura Industrial y de Servicios con enfoque hacia la calidad.</p>
+                </section>
+                <section class="conocenos conocenos-Rosa">
+                    <i class='bx bxs-book-bookmark conocenos__icon'></i>
+                    <h2 class="conocenos__titulos">Política de Calidad</h2>
+                    <p class="conocenos__parrafos">Formar y Desarrollar Integralmente a los Educandos del Sistema de Educación Tecnológica Industrial, en donde se manifieste el Avance y Desarrollo Tecnológico, la Experiencia del Personal Docente, Técnico, Administrativo y Directivo, reforzando los valores que los motiven a la calidad, creatividad y la mejora continua en los procesos institucionales para la satisfacción de nuestros clientes.</p>
+                </section>
+            </div>
+        </article>
+        <!-- CODIGO DE ETICA -->
+        <article>
+            <h1 class="apartados__titulo">CÓDIGO DE ÉTICA</h1>
+            <div class="etica__contenedor">
+                <p class="etica__parrafo">Buscar el bien común para Alumnos, Trabajadores Docentes y de Apoyo a la Educación, por encima de los intereses particulares. Con acciones y palabras honestas y dignas de crédibilidad propicia, el beneficio de la institución.</p>
+                <ul class="etica__lista">
+                    <li class="lista__elemento">No usar el cargo en la Institución para ganancia personal.</li>
+                    <li class="lista__elemento">Actuar siempre en forma Imparcial y en Estricta observancia de la norma.</li>
+                    <li class="lista__elemento">Garantizar el acceso a la Información de la Gestión Académica y Administrativa.</li>
+                    <li class="lista__elemento">Atender con Eficacia y Calidad la Optimización de los Recursos y la Rendición de Cuentas.</li>
+                    <li class="lista__elemento">Respetar y Defender la Preservación del Entorno Cultural y Ecológico de la Institución</li>
+                    <li class="lista__elemento">Atender a todos los miembros de la Institución y a la Comunidad con Generosidad, Sensibilidad, Solidaridad e Igualdad</li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <h1 class="apartados__titulo">MENSAJE DEL DIRECTOR</h1>
+            <div class="mensaje__contenedor">
+                <div class="mensaje__texto">
+                    <h2 class="mensaje__titulo">Señores padres de familia:</h2>
+                    <p class="mensaje__parrafo">Con su apoyo y esfuerzo, a lo largo de estos años sus hijos han logrado terminar la educación básica y están por comenzar una nueva etapa. Ahora cursarán la Educación Media Superior, donde de manera especial necesitarán que ustedes los acompañen y motiven a seguir adelante.</p>
+                    <p class="mensaje__parrafo">Esta nueva fase les proporcionará conocimientos, capacidades, actitudes y valores que les servirán para desarrollarse como personas y como ciudadanos, además de prepararlos tanto para ingresar a la educación superior como para incorporarse a la actividad productiva en mejores condiciones.</p>
+                    <p class="mensaje__parrafo">El ingreso a la Educación Media Superior representa un desafío para sus hijos, pues enfrentarán un sistema académico diferente al de la secundaria, a la vez que seguirán experimentando los cambios físicos, psicológicos y sociales de su adolescencia. Para muchos jóvenes, asimilar de manera simultánea todas estas modificaciones es muy difícil y puede llevarlos a cometer el grave error de abandonar la escuela. Actualmente, sólo 60 de cada 100 estudiantes que ingresan a la Educación Media Superior logra terminar sus estudios.</p>
+                    <p class="mensaje__parrafo">Para que los jóvenes enfrenten con éxito los retos de esta etapa, es sumamente importante el apoyo de los padres. Es necesario que ustedes sigan de cerca su avance en la escuela: que se aseguren de que sus hijos asistan a clases, tengan un buen desempeño académico y muestren un comportamiento apropiado. También es muy importante prestar atención a lo que les sucede fuera de los horarios de clase: a qué dedican su tiempo libre; quiénes son sus amistades y si están realizando actividades deseables para su formación como los deportes o actividades artísticas. La intención de estar al tanto de sus hijos, es guiarlos, además de prevenir y actuar ante situaciones de riesgo que los puedan llevar a abandonar sus estudios.</p>
+                    <p class="mensaje__parrafo">Usted no está solo en esta tarea y cuenta con el apoyo de la escuela para asegurar que sus hijos concluyan la Educación Media Superior. El Gobierno Federal y los Gobiernos Estatales han puesto en marcha el Movimiento Nacional para Combatir el Abandono Escolar, que ofrece apoyo e información a escuelas, estudiantes y padres de familia para prevenir situaciones de riesgo, detectarlas a tiempo y reaccionar para evitar que los jóvenes dejen la escuela. La escuela cuenta con diversos materiales sobre el tema y realizará actividades para apoyar a sus hijos y a usted en la meta de lograr que todos los jóvenes concluyan sus estudios. Hagamos todos que ésta sea nuestra tarea más importante.</p>
+                    <p class="mensaje__centrado mensaje__negrita">Atentamente:</p>
+                    <p class="mensaje__centrado">La Dirección del Plantel</p>
+                </div>
+                <div class="mensaje__imagen">
+                    <img class="mensaje__img" src="../assets/images/sobreNosotros.png" alt="">
+                </div>
+            </div>
+        </article>
+        <article>
+            <h1 class="apartados__titulo">HISTORIA</h1>
+            <div id="splide__historia" class="splide splide__historia">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0001.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0002.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0003.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0004.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0005.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0006.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0007.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0008.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0009.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0010.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0011.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0012.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0013.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0014.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0015.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0016.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="historia__img" src="../assets/images/historia_page-0017.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__contenedor">
+            <section class="footer__seccion footer__seccion-Ocultar">
+                <h1 class="footer__titulos">Sobre nosotros</h1>
+                <p class="footer__parrafo">
+                    Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128
+                    para lograr formar técnicos profesionales capaces de destacar en el ambito laboral. Desde hace más
+                    de 50 años hemos brindado las herramientras para que nuestros estudiantes logren sobresalir en la
+                    industria y sus vidas profesionales. Estamos comprometidos con la sociedad juarense y creemos
+                    firmemente en las educación y los valores que hemos impartido en cada uno de nuestros ingresados.
+                </p>
+                <div>
+                    <a class="footer__rrss" target="_blank"  href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821/">
+                        <i class='bx bxl-facebook footer__iconRRSS'></i>
+                    </a>
+                    <a class="footer__rrss" target="_blank" href="https://www.youtube.com/channel/UCBuXio9_FP2pdABkHykR67Q/videos">
+                        <i class='bx bxl-youtube footer__iconRRSS'></i>
+                    </a>
+                </div>
+            </section>
+            <section class="footer__seccion">
+                <h1 class="footer__titulos">Avisos de Privacidad</h1>
+                <a class="footer__enlaces" target="_blank" href="../assets/document/avisos/Aviso_de_Privacidad_Integral_Planteles-1.pdf">Aviso de Privacidad Integral Planteles</a>
+                <a class="footer__enlaces" target="_blank" href="../assets/document/avisos/Aviso_de_Privacidad_Simplificado_Planteles.pdf">Aviso de Privacidad Simplificado Planteles</a>
+                <a class="footer__enlaces" target="_blank" href="../assets/document/avisos/LPP.pdf">Política pública para la educación media superior</a>
+            </section>
+            <section class="footer__seccion">
+                <h1 class="footer__titulos">Información de Contacto</h1>
+                <ul class="footer__lista">
+                    <li class="footer__contacto">
+                        <span><i class='bx bxs-map contacto__icon'></i></span>
+                        <a class="footer__enlaces contacto__enlaces" target="_blank"
+                            href="https://goo.gl/maps/ATBLjX1t7thyiGRs5">CBTIS 128, Nueva Zelanda, Oasis</a>
+                    </li>
+                    <li class="footer__contacto">
+                        <span><i class='bx bxs-phone contacto__icon'></i></span>
+                        <div class="footer__phones">
+                            <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1934">656-619-1934</a>
+                            <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1570">656-619-1570</a>
+                        </div>
+                    </li>
+                    <li class="footer__contacto">
+                        <span><i class='bx bxl-gmail contacto__icon'></i></span>
+                        <a class="footer__enlaces contacto__enlaces" href="mailto: comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer__logos">
+            <img class="footer__logo" src="../assets/images/logo-dgeti.png" alt="">
+            <img class="footer__logo" src="../assets/images/logo-sems.png" alt="">
+        </div>
+        <div class="seccion__copyright">
+            <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="./scriptPages.js"></script>
+</body>
+</html>

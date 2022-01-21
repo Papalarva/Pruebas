@@ -14,48 +14,6 @@ window.addEventListener("load", function () {
 /*=====  End of LOAD  ======*/
 
 /*==============================
-=          VIDEO          =
-==============================*/
-var btn__mostrar = document.querySelector(".video__mostrar");
-var btn__ocultar = document.querySelector(".video__ocultar");
-var video__contenedor = document.querySelector(".video__contenedor");
-var video = document.querySelector(".video");
-
-function show__video() {
-    if ((video__contenedor.style.display = "none")) {
-        video__contenedor.style.display = "flex";
-        video__contenedor.style.opacity = "0";
-        video__contenedor.style.transition = "opacity .5s ease";
-        video.style.display = "block";
-        video.style.transition = "transform .5s ease";
-        setTimeout(() => {
-            video.style.transform = "scale(1)";
-            video__contenedor.style.opacity = "1";
-        }, 0);
-        video.play();
-        document.querySelector("body").style.overflowY = "hidden";
-    }
-}
-function hide__video() {
-    var video__contenedor = document.querySelector(".video__contenedor");
-    var video = document.querySelector(".video");
-    if ((video__contenedor.style.display = "flex")) {
-        video.style.transform = "scale(0)";
-        video__contenedor.style.transition = "opacity .5s ease";
-        video__contenedor.style.opacity = "0";
-        setTimeout(() => {
-        video.style.display = "none";
-        video__contenedor.style.display = "none";
-        }, 500);
-        video.pause();
-        document.querySelector("body").style.overflowY = "scroll";
-    }
-}
-btn__mostrar.addEventListener("click", show__video);
-btn__ocultar.addEventListener("click", hide__video);
-/*=====  End of VIDEO  ======*/
-
-/*==============================
 =          MENU SCROLL          =
 ==============================*/
 function enableScroll() {
@@ -137,6 +95,48 @@ function close__semestres() {
 }
 contenedor__semestres.addEventListener("click", close__semestres);
 /*=====  End of MENU MOVIL  ======*/
+
+/*==============================
+=          VIDEO          =
+==============================*/
+var btn__mostrar = document.querySelector(".video__mostrar");
+var btn__ocultar = document.querySelector(".video__ocultar");
+var video__contenedor = document.querySelector(".video__contenedor");
+var video = document.querySelector(".video");
+
+function show__video() {
+    if ((video__contenedor.style.display = "none")) {
+        video__contenedor.style.display = "flex";
+        video__contenedor.style.opacity = "0";
+        video__contenedor.style.transition = "opacity .5s ease";
+        video.style.display = "block";
+        video.style.transition = "transform .5s ease";
+        setTimeout(() => {
+            video.style.transform = "scale(1)";
+            video__contenedor.style.opacity = "1";
+        }, 0);
+        video.play();
+        document.querySelector("body").style.overflowY = "hidden";
+    }
+}
+function hide__video() {
+    var video__contenedor = document.querySelector(".video__contenedor");
+    var video = document.querySelector(".video");
+    if ((video__contenedor.style.display = "flex")) {
+        video.style.transform = "scale(0)";
+        video__contenedor.style.transition = "opacity .5s ease";
+        video__contenedor.style.opacity = "0";
+        setTimeout(() => {
+        video.style.display = "none";
+        video__contenedor.style.display = "none";
+        }, 500);
+        video.pause();
+        document.querySelector("body").style.overflowY = "scroll";
+    }
+}
+btn__mostrar.addEventListener("click", show__video);
+btn__ocultar.addEventListener("click", hide__video);
+/*=====  End of VIDEO  ======*/
 
 /*==============================
 =          NOTICIAS          =

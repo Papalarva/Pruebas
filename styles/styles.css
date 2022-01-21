@@ -78,7 +78,7 @@
 /*=====  End of GLOBAL  ======*/
 
 /*==============================
-=              ELEMENTOS GLOBALES           =
+=     ELEMENTOS GLOBALES      =
 ==============================*/
 .elemento__enlace::before {
     content: "";
@@ -213,6 +213,14 @@
     font-size: 1.3rem;
     color: var(--blanco);
     position: relative;
+}
+.pagina__seleccionada {
+    color: var(--rosa);
+    background: var(--blanco);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-shadow: none;
 }
 
 /* ESTILOS PARA EL VIDEO Y SUS ELEMENTOS */
