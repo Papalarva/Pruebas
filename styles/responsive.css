@@ -28,6 +28,7 @@
         height: auto;
         transform: translateX(-5px);
     }
+    .departamentos__titulos{text-align: center;}
 }
 
 @media screen and (max-width: 980px) {
