@@ -14,12 +14,12 @@
     <title>CBTIS 128</title>
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+    <script src="./scripts/splide.min.js"></script>
     <!-- CSS -->
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="./styles/splide-sea-green.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body class="body">
     <!-- HEADER -->
@@ -115,7 +115,7 @@
     <!-- MAIN -->
     <main id="main">
         <!-- NOTICIAS -->
-        <article>
+        <section>
             <h1 class="apartados__titulo">Noticias</h1>
             <div id="noticias__splide" class="splide noticias__splide">
                 <div class="splide__track">
@@ -221,9 +221,9 @@
                     </ul>
                 </div>
             </div>
-        </article>
+        </section>
         <!-- DESTACADOS -->
-        <article>
+        <section>
             <h1 class="apartados__titulo">DESTACADOS</h1>
             <div class="destacados__contenedor">
                 <div class="destacados__seccion">
@@ -301,9 +301,9 @@
                     </a>
                 </div>
             </div>
-        </article>
+        </section>
         <!-- EDUCACION -->
-        <article>
+        <section>
             <h1 class="apartados__titulo">EDUCACIÓN</h1>
             <div class="educacion__contenedor">
                 <div class="educacion__imagen">
@@ -374,46 +374,42 @@
                     </section>
                 </section>
             </div>
-        </article>
+        </section>
         <!-- NOTAS -->
-        <article>
+        <section>
             <h1 class="apartados__titulo">NOTAS</h1>
             <div class="notas__contenedor">
                 <div class="notas">
-                    <img class="notas__img" src="assets/images/img1.jpg" alt="">
+                    <img class="notas__img" src="./assets/images/img1.jpg" alt="">
                     <div class="capa">
-                        <a class="boton notas__enlace" href="assets/images/img1.jpg" target="_blank">Ver más</a>
+                        <a class="boton notas__enlace" href="./assets/images/img1.jpg" target="_blank">Ver más</a>
                     </div>
                 </div>
                 <div class="notas">
-                    <img class="notas__img" src="assets/images/img2.jpg" alt="">
+                    <img class="notas__img" src="./assets/images/img2.jpg" alt="">
                     <div class="capa">
-                        <a class="boton notas__enlace" href="assets/document/notas/Conferencia_sept21.pdf"
-                            target="_blank">Ver más</a>
+                        <a class="boton notas__enlace" href="./assets/document/notas/Conferencia_sept21.pdf" target="_blank">Ver más</a>
                     </div>
                 </div>
                 <div class="notas">
-                    <img class="notas__img" src="assets/images/img3.jpg" alt="">
+                    <img class="notas__img" src="./assets/images/img3.jpg" alt="">
                     <div class="capa">
-                        <a class="boton notas__enlace"
-                            href="assets/document/notas/Convocatoria-Opticart-11-mayo-2021.pdf" target="_blank">Ver
-                            más</a>
+                        <a class="boton notas__enlace" href="./assets/document/notas/Convocatoria-Opticart-11-mayo-2021.pdf" target="_blank">Ver más</a>
                     </div>
                 </div>
                 <div class="notas">
-                    <img class="notas__img" src="assets/images/img5.jpg" alt="">
+                    <img class="notas__img" src="./assets/images/img5.jpg" alt="">
                     <div class="capa">
-                        <a class="boton notas__enlace" href="assets/document/notas/Convocatoria_PUBLICA-T.pdf"
-                            target="_blank">Ver más</a>
+                        <a class="boton notas__enlace" href="./assets/document/notas/Convocatoria_PUBLICA-T.pdf" target="_blank">Ver más</a>
                     </div>
                 </div>
             </div>
             <a class="boton notas__mas" href="./pages/notas.html" target="_blank">
                 <p>Ver más</p>
             </a>
-        </article>
+        </section>
         <!-- JOVENES EN CASA -->
-        <article>
+        <section>
             <h1 class="apartados__titulo">JOVENES EN CASA</h1>
             <div class="jovenes__contenedor">
                 <section class="jovenes__texto">
@@ -477,7 +473,7 @@
                     </div>
                 </section>
             </div>
-        </article>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
@@ -536,6 +532,6 @@
             <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
         </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

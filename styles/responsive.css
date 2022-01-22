@@ -75,7 +75,14 @@
     .destacados__titulo {font-size: 1rem;}
     .titulacion__tarjeta{height: min-content;}
     .titulacion__texto{height: auto;}
-    
+    .contacto__informacion{flex-direction: column;}
+    .contacto__movil, .contacto__formulario, .contacto__seccion {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+    .contacto__mapa, .formulario__campos {width: 98vw;}
 }
 
 @media screen and (max-width: 620px) {

@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBTIS 128 | Alumnos</title>
+    <title>CBTIS 128 | Horarios</title>
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <!-- CSS -->
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/stylesPages.css">
     <link rel="stylesheet" href="../styles/responsive.css">
@@ -51,27 +49,27 @@
             </section>
             <ul class="header__lista">
                 <li><a class="menu__enlace elemento__enlace" href="../index.html">Inicio</a></li>
-                <li><a class="menu__enlace elemento__enlace" href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a class="menu__enlace elemento__enlace" href="../pages/departamentos.html">Departamentos</a></li>
-                <li><a class="menu__enlace elemento__enlace" href="../pages/alumnos.html">Alumnos</a></li>
-                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/.transparencia.html">Transparencia</a></li>
-                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/concursos.html">Concursos</a></li>
-                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/contacto.html">Contacto</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="./departamentos.html">Departamentos</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="./alumnos.html">Alumnos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="./.transparencia.html">Transparencia</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="./concursos.html">Concursos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="./contacto.html">Contacto</a></li>
                 <!-- start menu desplegable -->
                 <li class="dropdown menu__oculto">
                     <button class="boton menu__boton">Ver más</button>
                     <div class="dropmenu">
-                        <a class="menu__enlace elemento__enlace" href="../pages/transparencia.html">Transparencia</a>
-                        <a class="menu__enlace elemento__enlace" href="../pages/concursos.html">Concursos</a>
-                        <a class="menu__enlace elemento__enlace" href="../pages/departamentos.html">Departamentos</a>
+                        <a class="menu__enlace elemento__enlace" href="./transparencia.html">Transparencia</a>
+                        <a class="menu__enlace elemento__enlace" href="./concursos.html">Concursos</a>
+                        <a class="menu__enlace elemento__enlace" href="./contacto.html">Contacto</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <button class="boton menu__boton ">Horarios</button>
                     <div class="dropmenu">
-                        <a href="../pages/horarios1-2.html" class="menu__enlace elemento__enlace">2do Semestre</a>
-                        <a href="../pages/horarios3-4.html" class="menu__enlace elemento__enlace">4to Semestre</a>
-                        <a href="../pages/horarios5-6.html" class="menu__enlace elemento__enlace">6to Semestre</a>
+                        <a href="./horarios1-2.html" class="menu__enlace elemento__enlace">2do Semestre</a>
+                        <a href="./horarios3-4.html" class="menu__enlace elemento__enlace">4to Semestre</a>
+                        <a href="./horarios5-6.html" class="menu__enlace elemento__enlace">6to Semestre</a>
                     </div>
                 </li>
                 <!-- end menu desplegable -->
@@ -85,25 +83,53 @@
             <ul class="movil__lista">
                 <li><a id="toggle__semestres" class="movil__enlace movil__horarios">Horarios<i class='bx bxs-chevron-right chevron__icon'></i></a></li>
                 <li><a class="movil__enlace" href="../index.html">Inicio</a></li>
-                <li><a class="movil__enlace" href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a class="movil__enlace" href="../pages/departamentos.html">Departamentos</a></li>
-                <li><a class="movil__enlace" href="../pages/alumnos.html">Alumnos</a></li>
-                <li><a class="movil__enlace" href="../pages/transparencia.html">Transparencia</a></li>
-                <li><a class="movil__enlace" href="../pages/concursos.html">Concursos</a></li>
-                <li><a class="movil__enlace" href="../pages/contacto.html">Contacto</a></li>
+                <li><a class="movil__enlace" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="movil__enlace" href="./departamentos.html">Departamentos</a></li>
+                <li><a class="movil__enlace" href="./alumnos.html">Alumnos</a></li>
+                <li><a class="movil__enlace" href="./transparencia.html">Transparencia</a></li>
+                <li><a class="movil__enlace" href="./concursos.html">Concursos</a></li>
+                <li><a class="movil__enlace" href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <!-- MENU MOVIL DE SEMESTRES -->
         <nav class="menu__semestres">
             <ul class="semestres__lista">
-                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios1-2.html">2do Semestre</a></li>
-                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios3-4.html">4to Semestre</a></li>
-                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios5-6.html">6to Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="./horarios1-2.html">2do Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="./horarios3-4.html">4to Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="./horarios5-6.html">6to Semestre</a></li>
             </ul>
         </nav>
     </header>
     <!-- MAIN -->
     <main id="main">
+        <section>
+            <h1 class="apartados__titulo">Horarios 2do</h1>
+            <section class="horarios">
+                <h2 class="horarios__titulo">Toca las tarjetas para conocer mas información</h2>
+                <div class="horarios__flipcard">
+                    <div class="horarios__inner">
+                        <section class="horarios__enfrente">
+                            <img class="horarios__img" src="../assets/images/oferta-electronica.jpg" alt="">
+                            <h3 class="horarios__subtitulo">Electrónica</h3>
+                        </section>
+                        <section class="horarios__trasero">
+                            <h3 class="horarios__especialidad">Electronica</h3>
+                            <p class="horarios__semestre">Segundo Semestre</p>
+                            <div class="horarios__contenedor">
+                                <button class="horarios__boton">Selecciona tu grupo<i class='bx bx-chevron-down'></i></button>
+                                <div class="horarios__dropdown">
+                                    <a href="" class="horarios__enlace">2 - E</a>
+                                    <a href="" class="horarios__enlace">2 - F</a>
+                                    <a href="" class="horarios__enlace">2 - Q</a>
+                                    <a href="" class="horarios__enlace">2 - R</a>
+                                </div>
+                            </div>
+                            <p class="horarios__logo">CBTIS 128 <i class='bx bxs-zap icon__overlay__flipcard'></i></p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
@@ -162,6 +188,6 @@
             <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
         </div>
     </footer>
-    <script src="../script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

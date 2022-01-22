@@ -154,7 +154,7 @@
     opacity: 0;
     backdrop-filter: blur(2px);
     transform: scale(.8);
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .capa::before {
     content: '';

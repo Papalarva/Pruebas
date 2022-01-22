@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBTIS 128 | Alumnos</title>
+    <title>CBTIS 128 | Contacto</title>
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <!-- CSS -->
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/stylesPages.css">
     <link rel="stylesheet" href="../styles/responsive.css">
@@ -51,27 +49,27 @@
             </section>
             <ul class="header__lista">
                 <li><a class="menu__enlace elemento__enlace" href="../index.html">Inicio</a></li>
-                <li><a class="menu__enlace elemento__enlace" href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a class="menu__enlace elemento__enlace" href="../pages/departamentos.html">Departamentos</a></li>
-                <li><a class="menu__enlace elemento__enlace" href="../pages/alumnos.html">Alumnos</a></li>
-                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/.transparencia.html">Transparencia</a></li>
-                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/concursos.html">Concursos</a></li>
-                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="../pages/contacto.html">Contacto</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="./departamentos.html">Departamentos</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="./alumnos.html">Alumnos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="./.transparencia.html">Transparencia</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="./concursos.html">Concursos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="./contacto.html">Contacto</a></li>
                 <!-- start menu desplegable -->
                 <li class="dropdown menu__oculto">
                     <button class="boton menu__boton">Ver más</button>
                     <div class="dropmenu">
-                        <a class="menu__enlace elemento__enlace" href="../pages/transparencia.html">Transparencia</a>
-                        <a class="menu__enlace elemento__enlace" href="../pages/concursos.html">Concursos</a>
-                        <a class="menu__enlace elemento__enlace" href="../pages/departamentos.html">Departamentos</a>
+                        <a class="menu__enlace elemento__enlace" href="./transparencia.html">Transparencia</a>
+                        <a class="menu__enlace elemento__enlace" href="./concursos.html">Concursos</a>
+                        <a class="menu__enlace elemento__enlace" href="./contacto.html">Contacto</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <button class="boton menu__boton ">Horarios</button>
                     <div class="dropmenu">
-                        <a href="../pages/horarios1-2.html" class="menu__enlace elemento__enlace">2do Semestre</a>
-                        <a href="../pages/horarios3-4.html" class="menu__enlace elemento__enlace">4to Semestre</a>
-                        <a href="../pages/horarios5-6.html" class="menu__enlace elemento__enlace">6to Semestre</a>
+                        <a href="./horarios1-2.html" class="menu__enlace elemento__enlace">2do Semestre</a>
+                        <a href="./horarios3-4.html" class="menu__enlace elemento__enlace">4to Semestre</a>
+                        <a href="./horarios5-6.html" class="menu__enlace elemento__enlace">6to Semestre</a>
                     </div>
                 </li>
                 <!-- end menu desplegable -->
@@ -85,25 +83,110 @@
             <ul class="movil__lista">
                 <li><a id="toggle__semestres" class="movil__enlace movil__horarios">Horarios<i class='bx bxs-chevron-right chevron__icon'></i></a></li>
                 <li><a class="movil__enlace" href="../index.html">Inicio</a></li>
-                <li><a class="movil__enlace" href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a class="movil__enlace" href="../pages/departamentos.html">Departamentos</a></li>
-                <li><a class="movil__enlace" href="../pages/alumnos.html">Alumnos</a></li>
-                <li><a class="movil__enlace" href="../pages/transparencia.html">Transparencia</a></li>
-                <li><a class="movil__enlace" href="../pages/concursos.html">Concursos</a></li>
-                <li><a class="movil__enlace" href="../pages/contacto.html">Contacto</a></li>
+                <li><a class="movil__enlace" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="movil__enlace" href="./departamentos.html">Departamentos</a></li>
+                <li><a class="movil__enlace" href="./alumnos.html">Alumnos</a></li>
+                <li><a class="movil__enlace" href="./transparencia.html">Transparencia</a></li>
+                <li><a class="movil__enlace" href="./concursos.html">Concursos</a></li>
+                <li><a class="movil__enlace" href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <!-- MENU MOVIL DE SEMESTRES -->
         <nav class="menu__semestres">
             <ul class="semestres__lista">
-                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios1-2.html">2do Semestre</a></li>
-                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios3-4.html">4to Semestre</a></li>
-                <li><a class="movil__enlace horarios__enlaces" href="../pages/horarios5-6.html">6to Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="./horarios1-2.html">2do Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="./horarios3-4.html">4to Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="./horarios5-6.html">6to Semestre</a></li>
             </ul>
         </nav>
     </header>
     <!-- MAIN -->
     <main id="main">
+        <section>
+            <h1 class="apartados__titulo">Contacto</h1>
+            <!-- INFORMACION GENERAL CONTACTO -->
+            <section class="contacto__movil">
+                <h2 class="contacto__titulos">Información General</h2>
+                <div class="contacto__informacion">
+                    <a class="contacto__enlace" href="tel:6566191934">
+                        <i class="bx bxs-phone contacto__icono"></i>
+                        <p class="contacto__parrafo">TELÉFONO: 619-1934 y 619-1570</p>
+                    </a>
+                    <a class="contacto__enlace" href="mailto:direccion@cbtis128.edu.mx">
+                        <i class="bx bxl-gmail contacto__icono"></i>
+                        <p class="contacto__parrafo">CORREO: direccion@cbtis128.edu.mx</p>
+                    </a>
+                    <a class="contacto__enlace" target="_blank" href="https://www.google.com/maps/place/CBTIS+128/@31.654693,-106.4136039,15z/data=!4m2!3m1!1s0x0:0xd9ce9ee31ec09789?sa=X&ved=2ahUKEwiD3-6tr6D1AhUOnGoFHYhNDgYQ_BJ6BAg0EAU">
+                        <i class="bx bxs-map contacto__icono"></i>
+                        <p class="contacto__parrafo">DIRECCIÓN: Calle Nueva Zelanda No. 7870, Col. Oasis.</p>
+                    </a>
+                </div>
+            </section>
+            <!-- DIRECTORIO -->
+            <div class="contacto__seccion">
+                <section>
+                    <h2 class="contacto__titulos">Directorio</h2>
+                    <a href="mailto:subdireccion@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-school"></i>
+                        <p class="contacto__parrafo">subdireccion@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:controlescolar@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-book-content"></i>
+                        <p class="contacto__parrafo">controlescolar@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:practicasprofesionales@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-briefcase"></i>
+                        <p class="contacto__parrafo">practicasprofesionales@cbtis128.&shy;edu.mx</p>
+                    </a>
+                    <a href="mailto:titulacion@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-graduation"></i>
+                        <p class="contacto__parrafo">titulacion@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:serviciosocial@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-group"></i>
+                        <p class="contacto__parrafo">serviciosocial@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:becas@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bx-paperclip"></i>
+                        <p class="contacto__parrafo">becas@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:orientacion.tm@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-message-dots"></i>
+                        <p class="contacto__parrafo">orientacion.tm@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:orientacion.tv@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-message-dots"></i>
+                        <p class="contacto__parrafo">orientacion.tv@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:tutorias@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-user-voice"></i>
+                        <p class="contacto__parrafo">tutorias@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:biblioteca@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bxs-book-bookmark"></i>
+                        <p class="contacto__parrafo">biblioteca@cbtis128.edu.mx</p>
+                    </a>
+                    <a href="mailto:informacion@cbtis128.edu.mx" class="contacto__enlace">
+                        <i class="contacto__icono bx bx-search-alt-2"></i>
+                        <p class="contacto__parrafo">informacion@cbtis128.edu.mx</p>
+                    </a>
+                </section>
+                <section>
+                    <h2 class="contacto__titulos">Ubicación</h2>
+                    <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27169.908315869037!2d-106.413604!3d31.654693000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9ce9ee31ec09789!2sCBTIS%20128!5e0!3m2!1ses!2smx!4v1641584106974!5m2!1ses!2smx"  allowfullscreen="" loading="lazy"></iframe>
+                </section>
+            </div>
+            <!-- FORMULARIO CONTACTO -->
+            <h2 class="contacto__titulos">Comentarios</h2>
+            <form class= "contacto__formulario" action="https://formspree.io/f/xqknebqy" autocomplete="off" method="post" >
+                <input class="formulario__campos" type="text" name="Nombre" placeholder="Ingrese su nombre">
+                <input class="formulario__campos" type="email" name="Correo" placeholder="Ingrese su correo">
+                <input class="formulario__campos" type="text" name="Telefono" placeholder="Ingrese su tel&eacute;fono">
+                <input class="formulario__campos" type="text" name="Asunto" placeholder="Ingrese el asunto">
+                <textarea class="formulario__campos formulario__comentarios" name="Comentarios" placeholder="Coloque aqu&iacute; sus comentarios"></textarea>
+                <input class="boton contacto__boton" type="submit"  value="Enviar">
+            </form>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
@@ -162,6 +245,6 @@
             <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
         </div>
     </footer>
-    <script src="../script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
