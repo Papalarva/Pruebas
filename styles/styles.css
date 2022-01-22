@@ -101,6 +101,7 @@
     color: var(--blanco);
     background-color: var(--rosa);
     padding: 20px;
+    display: inline-block;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     border-radius: 5px;

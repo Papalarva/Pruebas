@@ -349,10 +349,66 @@
 /*=====  End of TRANSPARENCIA ======*/
 
 /*==============================
-=           CONOCENOS          =
+=           CONCURSOS          =
 ==============================*/
-
-/*=====  End of CONOCENOS ======*/
+.concursos__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+.concursos {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    position: relative;
+}
+.concursos::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    transform: scaleX(.005);
+    transform-origin: left;
+    transition: all .3s ease;
+    z-index: -1;
+}
+.concursos-verde::before{background-color: #6dbb24;}
+.concursos-azul::before{background-color: #38bd9b;}
+.concursos-cafe::before{background-color: #b65f2c;}
+.concursos-azulOscuro::before{background-color: #000269;}
+.concursos-morado::before{background-color: #8746ff;}
+.concursos-rojo::before{background-color: #ff2929;}
+.concursos-naranja::before{background-color: #ff9100;}
+.concursos:hover::before {transform: scaleX(1);}
+.concursos:hover .concursos__texto, .concursos:hover .concursos__titulo{color: var(--blanco);}
+.concursos__texto {width: 70%;}
+.concursos__titulo {
+    font-family: var(--font-titulo);
+    color: var(--rosa);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.concursos__parrafo{margin: 15px 0; text-align: justify;}
+.concursos__boton{padding: 10px;}
+.concursos__boton:hover{
+    background-color: var(--blanco);
+    color: var(--rosa);
+}
+.concursos__imagen {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.concursos__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/*=====  End of CONCURSOS ======*/
 
 /*==============================
 =           CONOCENOS          =
